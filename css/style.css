@@ -1,5 +1,5 @@
 body {
-	background: #FAEBD7 url('../images/vintage-concrete.png');
+	background: #FAEBD7 url('rain.');
 	color: #333;
 }
 
@@ -18,14 +18,20 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+	background-color: #7EC6F7;
+	color: #09547E;
 	min-height: 100px;
 	margin-top: 60px;
 }
 
 header h1 {
+	text-align: center;
+
 	padding: 40px 60px;
+	font-size: 50px;
+
+
+
 }
 
 
@@ -42,7 +48,7 @@ nav a:hover { color: white; }
 
 /* Main styles */
 main { 
-	background-color: #fff;
+	background-color: #C9E4F6;
 	display: grid;
 	grid-template-columns: 60% 40%;
 }
@@ -65,7 +71,7 @@ aside {
 
 /* Footer styles */
 footer { 
-	background-color: #000;
+	background-color: #C9E4F6;
 	color: white;
 	text-align: center;
  }
