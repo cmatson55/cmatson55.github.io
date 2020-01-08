@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 1</title>
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<style>
+.text{
+	display: none;
+	font-size: 20px;
+	max-width: 1000px;
+	line-height: 30px;
+	margin: auto;
+	padding: 50px;
+}
+.show {
+	display: block;
+}
+.btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	font-family: 'arial', bold; 
+	font-size:15px;
+}
+#panel, #flip {
+	font-family: 'arial', bold; 
+	font-size:15px; 
+	padding: 20px;
+	text-align: center;
+	border: solid 1.5px #ccc;
+}
+#panel {
+	padding: 80px;
+	display: none;
+}
+h1 {
+	font-family: righteous, cursive, light;
+	font-size: 40px;
+	letter-spacing: 2.5px;
+
+} 
+
+
+	</style>
+</head>
+<body>
+	<h1 align="center">Lights</h1>
+		<a href="#" class="btn">Click me</a>
+		<p align="center" class="text" >Do not go gentle into that good night,
+
+Old age should burn and rave at close of day;
+
+Rage, rage against the dying of the <span>light.</span>
+
+Though wise men at their end know dark is right,
+
+Because their words had forked no lightning they
+
+Do not go gentle into that good night.
+
+Good men, the last wave by, crying how bright
+
+Their frail deeds might have danced in a green bay,
+
+Rage, rage against the dying of the <span>light.</span>
+
+Wild men who caught and sang the sun in flight,
+
+And learn, too late, they grieved it on its way,
+
+Do not go gentle into that good night.
+
+Grave men, near death, who see with blinding sight
+
+Blind eyes could blaze like meteors and be gay,
+
+Rage, rage against the dying of the <span>light.</span>
+
+And you, my father, there on the sad height,
+
+Curse, bless, me now with your fierce tears, I pray.
+
+Do not go gentle into that good night.
+
+Rage, rage against the dying of the <span>light.</span></p>
+
+
+
+<div id="flip">Click to slide</div>
+<div id="panel">	
+	<img src="images/color.jpg">
+	<img src="images/color2.jpg">
+	<img src="images/color3.jpg">
+	<img src="images/color4.jpg">
+</div>
+</body>
+<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous">
+</script>
+<script>
+  	$('.btn').click(function(){
+  		$('.text').toggleClass('show')
+  	})
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$('p span').css('color', 'red');
+
+</script>
+
+
+
+</html>
+
