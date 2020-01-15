@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 2</title>
+</head>
+<script>src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Questrial&display=swap');
+		.first-text {
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: 20px;
+		}
+		h1 {
+			padding-left: 15px;
+			font-family: 'Playfair Display', serif;
+			font-size: 35px;
+
+		}
+		.narrative-text {
+			padding-right: 15px;
+			padding-top: 30px;
+			font-family: 'Questrial', sans-serif;
+			font-size: 15px;
+			line-height: 20px;
+		}
+		h4 {
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+			padding-top: 20px;
+		}
+		.grid-2 {
+			display: grid;
+			grid-template-columns: 3 1fr;
+			grid-template-areas: "images albums";
+		}
+		.albums {
+			padding-top: 100px;
+			padding-left: 80px;
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+			line-height: 35px;
+			
+		}
+		.images {
+			padding-left: 100px;
+
+		}
+
+		
+	</style>
+<body>
+	<section class="first-text">
+		<h1>Malcolm James McCormick</h1>
+		<h4>a.k.a. Mac Miller</h4>
+		<p class="narrative-text">The narrative of Mac Miller is one of redemption unfinished. Initially a carefree adolescent mesmerized by living life in abundance, the claustrophobia that comes with success eroded the outskirts of his sanity. His music grew darker with each project. Macadelic was the initial entry into his rapidly closing in world.</p>
+	</section>
+	<section class="grid-2">
+		<div class="images">
+		<img src="images/mac-miller.jpg">
+		</div>
+		<div class="albums">
+			<ul>
+			<li>The Jukebox: Prelude to Class Clown</li>
+			<li>The High Life</li>
+			<li>K.I.D.S</li>
+			<li>Best Day Ever</li>
+			<li>I Love Life, Thank You</li>
+			<li>Blue Slide Park</li>
+			<li>Macadelic</li>
+			<li>Watching Movies with the sound off</li>
+			<li>Faces</li>
+			<li>GO:OD AM</li>
+			<li>The Divine Feminine</li>
+			<li>Swimming</li>
+			<li>Circles</li>
+			</ul>
+		</div>
+		<script>
+			$("#dropDownMenu li").each(function(i) {
+    $(this).delay(100 * i).fadeIn(500);
+});</script>
+	</section>
+</body>
+</html>
