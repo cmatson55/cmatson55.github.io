@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Questrial&display=swap');
 * {
 	box-sizing: border-box;
 }
@@ -30,8 +31,14 @@ header {
 }
 
 header h1 {
+	font-family: 'Playfair Display', serif;
 	padding: 40px 60px;
-	font-size: 48px;
+	font-size: 60px;
+	font-style: bold;
+	width: 30px;
+}
+h2 {
+	font-size: 20px;
 }
 
 
@@ -40,6 +47,7 @@ nav {  }
 nav ul { 
 	display: flex;
 	justify-content: flex-end;
+	line-height: 25px;
 }
 nav li { padding: 10px 10px; }
 
